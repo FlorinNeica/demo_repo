@@ -7,7 +7,7 @@ package automation.buildings;
  *
  */
 
-public class Toilet extends Floor {
+public class Toilet {
 	private String name;
 
 	public Toilet(String name) {

@@ -9,7 +9,7 @@ import java.util.List;
  *
  */
 
-public class OfficeSpace extends Floor {
+public class OfficeSpace {
 
 	private String name;
 	private List<Desk> desks;

@@ -6,7 +6,7 @@ package automation.buildings;
  * @author ionel
  *
  */
-public class ConferenceRoom extends Floor {
+public class ConferenceRoom {
 
 	private String name;
 	private int seat;

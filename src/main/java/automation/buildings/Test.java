@@ -9,13 +9,6 @@ import java.util.List;
 
 public class Test {
 
-	private static final String KITCHENS = " Kitchens";
-	private static final String TOILETS = " Toilets";
-	private static final String CONFERENCE_ROOMS = " Conference rooms";
-	private static final String DESKS = " Desks";
-	private static final String OFFICE_SPACES = " Office spaces";
-	private static final String FLOORS = " Floors";
-
 	public static void main(String[] args) {
 
 		// floor1

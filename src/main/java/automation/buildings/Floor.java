@@ -16,9 +16,7 @@ public class Floor extends Building {
 	private List<Kitchen> kitchens;
 	private List<ConferenceRoom> conferenceRooms;
 
-	public Floor() {
-	}
-
+	
 	public Floor(String name, List<OfficeSpace> officeSpaces, List<Toilet> toilets, List<Kitchen> kitchens,
 			List<ConferenceRoom> conferenceRooms) {
 		this.name = name;
@@ -69,25 +67,4 @@ public class Floor extends Building {
 				+ "\n\t"+ conferenceRooms.size()+" ConferenceRooms"
 				+ "\n\t\t" + conferenceRooms;
 	}
-
-	// @Override
-	// public String toString() {
-	//
-	// return name +":"
-	// + "\n\t"+ officeSpaces.size() + " OfficeSpaces"
-	// + "\n\t\t"+ officeSpaces
-	// + "\n\t"+toilets.size()+ " Toilets"
-	// + "\n\t\t"+toilets
-	// + "\n\t"+kitchens.size()+" Kitchens"
-	// + "\n\t\t"+kitchens
-	// + "\n\t"+ conferenceRooms.size()+" ConferenceRooms"
-	// +"\n\t\t"+ conferenceRooms;
-	//
-	// }
-
-	// @Override
-	// public String toString() {
-	// return name + " " + floorNumber + ":";
-	// }
-
 }

@@ -7,7 +7,7 @@ package automation.buildings;
  *
  */
 
-public class Kitchen extends Floor {
+public class Kitchen {
 
 	private String name;
 	private int coffeeMachine;
@@ -35,10 +35,8 @@ public class Kitchen extends Floor {
 
 	@Override
 	public String toString() {
-		return name 
-				+ "\n\t\t\t Coffee Machine=" + coffeeMachine 
-				+ "\n\t\t\t Water Dispenser=" + waterDispenser 
-				+ "\n\t\t\t Fridge="+ fridge;
+		return name + "\n\t\t\t Coffee Machine=" + coffeeMachine + "\n\t\t\t Water Dispenser=" + waterDispenser + "\n\t\t\t Fridge="
+				+ fridge;
 	}
 
 }
