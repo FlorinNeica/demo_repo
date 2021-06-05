@@ -6,6 +6,8 @@ package automation.first;
  */
 public class Rectangle {
 
+	int number;
+
 	public static void main(String[] args) {
 
 		// drawFullShape(Integer.parseInt(args[0]), Integer.parseInt(args[1]));
