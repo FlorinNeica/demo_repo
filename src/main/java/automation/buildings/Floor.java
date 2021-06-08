@@ -9,14 +9,21 @@ import java.util.List;
  *
  */
 public class Floor extends Building {
+	/**
+	 * @param name
+	 *        - The name of the floor
+	 * @list OfficeSpaces - the list with office spaces
+	 * @list Toilet - the list with toilets
+	 * @list Kitchen - the list with kitchens
+	 * @list ConferenceRoom - the list with conference rooms
+	 */
 	private String name;
-	private int floorNumber;
 	private List<OfficeSpace> officeSpaces;
 	private List<Toilet> toilets;
 	private List<Kitchen> kitchens;
 	private List<ConferenceRoom> conferenceRooms;
 
-	
+	// floor instance
 	public Floor(String name, List<OfficeSpace> officeSpaces, List<Toilet> toilets, List<Kitchen> kitchens,
 			List<ConferenceRoom> conferenceRooms) {
 		this.name = name;
@@ -26,45 +33,20 @@ public class Floor extends Building {
 		this.conferenceRooms = conferenceRooms;
 	}
 
-	@Override
-	public String getName() {
-		return name;
-	}
-
-	public int getFloorNumber() {
-		return floorNumber;
-	}
-
-	public List<OfficeSpace> getOfficeSpaces() {
-		return officeSpaces;
-	}
-
-	public List<Toilet> getToilets() {
-		return toilets;
-	}
-
-	public List<Kitchen> getKitchens() {
-		return kitchens;
-	}
-
-	public List<ConferenceRoom> getConferenceRooms() {
-		return conferenceRooms;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
+	/**
+	 * This method returns and indents: the name of the floors the number and the name of the office spaces on every floor the number and the name of the toilets on every floor the number and the name of the kitchens on every
+	 * floor the number and the name of the conference rooms on every floor
+	 */
 	@Override
 	public String toString() {
 		return "\n" + name + ":" 
-				+ "\n\t" + officeSpaces.size() + " OfficeSpaces" 
+				+ "\n\t" + officeSpaces.size() + " Office Spaces"
 				+ "\n\t\t" + officeSpaces 
-				+ "\n\t"+toilets.size()+ " Toilets"
-				+ "\n\t\t" + toilets
-				+ "\n\t"+kitchens.size()+" Kitchens"
+				+ "\n\t" + toilets.size()+ " Toilets" 
+				+ "\n\t\t" + toilets 
+				+ "\n\t" + kitchens.size() + " Kitchens" 
 				+ "\n\t\t" + kitchens 
-				+ "\n\t"+ conferenceRooms.size()+" ConferenceRooms"
+				+ "\n\t"+ conferenceRooms.size() + " Conference Rooms" 
 				+ "\n\t\t" + conferenceRooms;
 	}
 }

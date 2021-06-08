@@ -2,8 +2,10 @@ package automation.buildings;
 
 /**
  * The Test class where I solved the homework's requirements
+ * 
+ * @author ionel
+ *
  */
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,8 +13,10 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		// floor1
-
+		/**
+		 * The composition for Floor 1 with: 1 office space and 20 desks, 2 toilets, 1 kitchen, 3 conference rooms
+		 */
+		// Desks composition on Floor 1
 		List<Desk> desksOfficeSpace1 = new ArrayList<>();
 		Desk desk1 = new Desk("Desk1");
 		Desk desk2 = new Desk("Desk2");
@@ -55,30 +59,37 @@ public class Test {
 		desksOfficeSpace1.add(desk19);
 		desksOfficeSpace1.add(desk20);
 
+		// Office Space 1 composition on Floor 1
 		List<OfficeSpace> officeSpacesFloor1 = new ArrayList<>();
 		OfficeSpace officeSpace1 = new OfficeSpace("Office space 1", desksOfficeSpace1);
 		officeSpacesFloor1.add(officeSpace1);
 
+		// Toilet 1 and 2 composition on Floor 1
 		List<Toilet> toiletsFloor1 = new ArrayList<>();
 		Toilet toilet1 = new Toilet("Toilet 1");
 		Toilet toilet2 = new Toilet("Toilet 2");
 		toiletsFloor1.add(toilet1);
 		toiletsFloor1.add(toilet2);
 
+		// Kitchen 1 composition on Floor 1
 		List<Kitchen> kitchensFloor1 = new ArrayList<>();
 		Kitchen kitchen1 = new Kitchen("Kitchen 1", 1, 1, 1);
 		kitchensFloor1.add(kitchen1);
 
+		// Conference Rooms 1, 2, 3 composition on Floor 1
 		List<ConferenceRoom> conferenceRoomsFloor1 = new ArrayList<>();
-		ConferenceRoom conferenceRoom1 = new ConferenceRoom("Conference room 1", 10, 1);
-		ConferenceRoom conferenceRoom2 = new ConferenceRoom("Conference room 2", 10, 1);
-		ConferenceRoom conferenceRoom3 = new ConferenceRoom("Conference room 3", 10, 1);
+		ConferenceRoom conferenceRoom1 = new ConferenceRoom("Conference room 1", 10, 1, 0, 0);
+		ConferenceRoom conferenceRoom2 = new ConferenceRoom("Conference room 2", 10, 1, 0, 0);
+		ConferenceRoom conferenceRoom3 = new ConferenceRoom("Conference room 3", 10, 1, 0, 0);
 		conferenceRoomsFloor1.add(conferenceRoom1);
 		conferenceRoomsFloor1.add(conferenceRoom2);
 		conferenceRoomsFloor1.add(conferenceRoom3);
 
-		// floor2
+		/**
+		 * The composition for Floor 2 with: 2 office spaces with 10 desks each , 2 toilets, 1 kitchen, 4 conference rooms
+		 */
 
+		// Desks composition on Floor 2
 		List<Desk> desksOfficeSpace2 = new ArrayList<>();
 		Desk desk21 = new Desk("Desk21");
 		Desk desk22 = new Desk("Desk22");
@@ -124,50 +135,58 @@ public class Test {
 		desksOfficeSpace3.add(desk39);
 		desksOfficeSpace3.add(desk40);
 
+		// Office space 2, 3 composition on Floor 2
 		List<OfficeSpace> officeSpacesFloor2 = new ArrayList<>();
 		OfficeSpace officeSpace2 = new OfficeSpace("Office space 2", desksOfficeSpace2);
 		OfficeSpace officeSpace3 = new OfficeSpace("Office space 3", desksOfficeSpace3);
 		officeSpacesFloor2.add(officeSpace2);
 		officeSpacesFloor2.add(officeSpace3);
 
+		// Toilet 3, 4 composition on Floor 2
 		List<Toilet> toiletsFloor2 = new ArrayList<>();
 		Toilet toilet3 = new Toilet("Toilet 3");
 		Toilet toilet4 = new Toilet("Toilet 4");
 		toiletsFloor2.add(toilet3);
 		toiletsFloor2.add(toilet4);
 
+		// Kitchen 2 composition on Floor 2
 		List<Kitchen> kitchensFloor2 = new ArrayList<>();
 		Kitchen kitchen2 = new Kitchen("Kitchen 2", 1, 1, 1);
 		kitchensFloor2.add(kitchen2);
 
+		// Conference Room 4, 5, 6, 7 composition on Floor 2
 		List<ConferenceRoom> conferenceRoomsFloor2 = new ArrayList<>();
-		ConferenceRoom conferenceRoom4 = new ConferenceRoom("Conference room 4", 8, 1);
-		ConferenceRoom conferenceRoom5 = new ConferenceRoom("Conference room 5", 8, 1);
-		ConferenceRoom conferenceRoom6 = new ConferenceRoom("Conference room 6", 8, 1);
-		ConferenceRoom conferenceRoom7 = new ConferenceRoom("Conference room 7", 8, 1);
+		ConferenceRoom conferenceRoom4 = new ConferenceRoom("Conference room 4", 8, 1, 0, 0);
+		ConferenceRoom conferenceRoom5 = new ConferenceRoom("Conference room 5", 8, 1, 0, 0);
+		ConferenceRoom conferenceRoom6 = new ConferenceRoom("Conference room 6", 8, 1, 0, 0);
+		ConferenceRoom conferenceRoom7 = new ConferenceRoom("Conference room 7", 8, 1, 0, 0);
 		conferenceRoomsFloor2.add(conferenceRoom4);
 		conferenceRoomsFloor2.add(conferenceRoom5);
 		conferenceRoomsFloor2.add(conferenceRoom6);
 		conferenceRoomsFloor2.add(conferenceRoom7);
 
-		// floor3
+		/**
+		 * The composition for Floor 3 with: 2 toilets and 6 conference rooms
+		 */
 
 		List<OfficeSpace> officeSpacesFloor3 = new ArrayList<>();
 		List<Kitchen> kitchensFloor3 = new ArrayList<>();
 
+		//Toilet 5, 6 composition on Floor 3
 		List<Toilet> toiletsFloor3 = new ArrayList<>();
 		Toilet toilet5 = new Toilet("Toilet 5");
 		Toilet toilet6 = new Toilet("Toilet 6");
 		toiletsFloor3.add(toilet5);
 		toiletsFloor3.add(toilet6);
 
+		//Conference Rooms 8, 9, 10 , 11, 12, 13 composition on Floor 3
 		List<ConferenceRoom> conferenceRoomsFloor3 = new ArrayList<>();
-		ConferenceRoom conferenceRoom8 = new ConferenceRoom("Conference room 8", 30, 1, 1);
-		ConferenceRoom conferenceRoom9 = new ConferenceRoom("Conference room 9", 20, 1, 1);
-		ConferenceRoom conferenceRoom10 = new ConferenceRoom("Conference room 10", 10, 1, 1);
-		ConferenceRoom conferenceRoom11 = new ConferenceRoom("Conference room 11", 10, 1, 1);
-		ConferenceRoom conferenceRoom12 = new ConferenceRoom("Conference room 12", 10, 1, 1);
-		ConferenceRoom conferenceRoom13 = new ConferenceRoom("Conference room 13", 10, 1, 1);
+		ConferenceRoom conferenceRoom8 = new ConferenceRoom("Conference room 8", 30, 0, 1, 1);
+		ConferenceRoom conferenceRoom9 = new ConferenceRoom("Conference room 9", 20, 1, 0, 1);
+		ConferenceRoom conferenceRoom10 = new ConferenceRoom("Conference room 10", 10, 1, 0, 1);
+		ConferenceRoom conferenceRoom11 = new ConferenceRoom("Conference room 11", 10, 1, 0, 1);
+		ConferenceRoom conferenceRoom12 = new ConferenceRoom("Conference room 12", 10, 1, 0, 1);
+		ConferenceRoom conferenceRoom13 = new ConferenceRoom("Conference room 13", 10, 1, 0, 1);
 
 		conferenceRoomsFloor3.add(conferenceRoom8);
 		conferenceRoomsFloor3.add(conferenceRoom9);
@@ -176,6 +195,8 @@ public class Test {
 		conferenceRoomsFloor3.add(conferenceRoom12);
 		conferenceRoomsFloor3.add(conferenceRoom13);
 
+		
+		//Floors composition 
 		List<Floor> floors = new ArrayList<>();
 		Floor floor1 = new Floor("Floor1", officeSpacesFloor1, toiletsFloor1, kitchensFloor1, conferenceRoomsFloor1);
 		Floor floor2 = new Floor("Floor2", officeSpacesFloor2, toiletsFloor2, kitchensFloor2, conferenceRoomsFloor2);
@@ -187,10 +208,7 @@ public class Test {
 
 		Building building = new Building("Office Florin", floors);
 
-		System.out.println(building.toString().replace("["," ").replace("]","").replace(",", " \n\t\t"));
-		// System.out.println(floor1.toString().replace("["," ").replace("]","").replace(",", " \n\t\t"));
-		// System.out.println(floor2.toString().replace("["," ").replace("]","").replace(",", " \n\t\t"));
-		// System.out.println(floor3.toString().replace("["," ").replace("]","").replace(",", " \n\t\t"));
-
+		//Prints the structure of the building
+		System.out.println(building.toString().replace("[", " ").replace("]", "").replace(",", " \n\t\t"));
 	}
 }

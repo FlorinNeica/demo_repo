@@ -8,7 +8,6 @@ import java.util.List;
  * @author ionel
  *
  */
-
 public class Building {
 	/**
 	 * @param name
@@ -17,6 +16,7 @@ public class Building {
 	 *        - The height of the building in m
 	 * @param width
 	 *        - The width of the building in m
+	 * @list Floor- The list of Floors
 	 */
 	private String name;
 	private int lenght;
@@ -25,43 +25,41 @@ public class Building {
 
 	private List<Floor> floors;
 
-	// Building instance
+	// Building instances
 
 	public Building() {
-
 	}
 
 	public Building(String name, List<Floor> floors) {
 		this.name = name;
 		this.floors = floors;
-
 	}
 
+	// Returns the name of the building
 	public String getName() {
 		return name;
 	}
 
+	// Returns the length of the building
 	public int getLenght() {
 		return lenght;
 	}
 
+	// Returns the width of the building
 	public int getWidth() {
 		return width;
 	}
 
+	// Returns the heigth of the building
 	public int getHeight() {
 		return height;
 	}
-	//
-	// @Override
-	// public String toString() {
-	// return "Building " + name + floors;
-	// }
 
+	/**
+	 * This method returns: the name of the building the number of floors the content of every floor
+	 */
 	@Override
 	public String toString() {
-		// return "Building " + name + " has: " + floors.size() + " Floors";
-		return "Building " + name + " has: " + floors.size() + " Floors" + floors;
+		return name + " has " + floors.size() + " floors" + floors;
 	}
-
 }
