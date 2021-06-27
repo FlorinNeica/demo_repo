@@ -26,6 +26,11 @@ public class Array {
 
 		}
 
+		// verific daca 2 obiecte in java sunt egale
+		Light l1 = new Light();
+		Light l2 = new Light();
+		l1.equals(l2);
+
 	}
 
 }
